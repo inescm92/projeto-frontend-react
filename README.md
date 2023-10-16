@@ -55,7 +55,7 @@ O Footer inclui ainda a componente Weather que exibe informações sobre o clima
 
 1. Navegação dos botões existentes nas componentes Home e About para as seções pretendidas.
 2. Os cartões com imagens na seção Home serem mais interativos e permitirem aceder a publicações acerca dos destinos numa página de Blog.
-3. Na seção popular, os cartões apresentarem reviews e rating de cada experiência dados pelo utilizador.
+3. Na seção Popular, os cartões apresentarem reviews e rating de cada experiência dados pelo utilizador.
 4. Links presentes no Footer conduzirem a outras páginas com a respetiva informação.
 5. Integração de Newsletter
 6. Opção de tradução do site.
