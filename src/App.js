@@ -9,7 +9,7 @@ import Popular from './components/Popular';
 import Explore from './components/Explore';
 import Join from './components/Join';
 import Footer from './components/Footer';
-import PostForm from './components/PostForm';
+import Blog from './components/Blog';
 
 // crud imports
 import CreatePost from './API/CreatePost';
@@ -30,15 +30,15 @@ function App() {
 					<Home />
 					<About />
 					<Popular />
-					<PostForm />
-					<Routes>
-						<Route path='/create' element={<CreatePost />} />
-						<Route path='/update/:id' element={<UpdatePost />} />
-						<Route path='/delete/:id' element={<DeletePost />} />
-						<Route path='*' element={<Navigate to='/' />} />
-					</Routes>
 					<Explore />
 				</main>
+				<Blog />
+				<Routes>
+					<Route path='/create' element={<CreatePost />} />
+					<Route path='/update/:id' element={<UpdatePost />} />
+					<Route path='/delete/:id' element={<DeletePost />} />
+					<Route path='*' element={<Navigate to='/' />} />
+				</Routes>
 				<Join />
 				<Footer />
 			</div>

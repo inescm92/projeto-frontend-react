@@ -500,6 +500,14 @@ img {
 	color: var(--title-color);
 }
 
+/*=============== BLOG ===============*/
+
+.blog__title {
+	font-size: var(--h1-font-size);
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
 /*=============== JOIN ===============*/
 .join__container {
 	row-gap: 3rem;
