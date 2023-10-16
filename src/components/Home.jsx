@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import HomeImage from '../img/home-bg.jpg';
 import HomeLake from '../img/home-lake.jpg';
@@ -23,9 +22,9 @@ function Home() {
 
 					<p className='home__description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis delectus cum dolorum voluptatem dolorem eos. Quos, fuga.</p>
 
-					<Link to='/about' className='button'>
+					<div className='button'>
 						GET STARTED <i className='ri-arrow-right-line'></i>
-					</Link>
+					</div>
 				</div>
 
 				<div className='home__cards grid'>

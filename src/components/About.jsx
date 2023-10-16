@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import AboutCaravan from '../img/about-caravan.jpg';
 
@@ -18,9 +17,9 @@ function About() {
 						tenetur distinctio tempora illum. Tempora quidem rem quaerat laborum reiciendis hic.
 					</p>
 
-					<Link to='/Explore' className='button'>
+					<div className='button'>
 						EXPLORE TRAVEL <i className='ri-arrow-right-line'></i>
-					</Link>
+					</div>
 				</div>
 
 				<div className='about__image'>

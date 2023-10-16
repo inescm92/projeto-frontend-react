@@ -121,19 +121,19 @@ img {
 
 /* HEADER & NAV */
 
-.Navbar {
+.navbar {
 	position: fixed;
 	width: 100%;
-	background-color: transparent;
+	background-color: var(--body-color);
 	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
 	padding-top: 1rem;
 }
 
-.navbar-blur {
-	backdrop-filter: blur(50px);
-	-webkit-backdrop-filter: blur(50px);
+.nav__list {
+	display: flex;
+	align-items: center;
 }
 
 .nav {
@@ -147,14 +147,11 @@ img {
 	color: var(--title-color);
 	font-family: var(--second-font);
 	font-weight: var(--font-semi-bold);
-	font-size: var(--h3-font-size);
+	font-size: var(--h2-font-size);
 }
 
-.nav__toggle {
-	display: flex;
-	font-size: 1.25rem;
-	color: var(--title-color);
-	cursor: pointer;
+.navbar__toggle {
+	display: none;
 }
 
 /* Navigation for mobile devices */
@@ -163,19 +160,62 @@ img {
 		position: fixed;
 		top: -100%;
 		left: 0;
-		background-color: hsla(0, 0%, 0%, 0.3);
+		background-color: var(--body-color);
 		width: 100%;
 		padding-block: 4rem;
 		transition: top 0.4s;
 		z-index: 3;
 	}
-}
 
-.nav__list {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	row-gap: 2.5rem;
+	.navbar__toggle {
+		display: block;
+		cursor: pointer;
+		z-index: 9999;
+	}
+
+	.bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		transition: all 500ms ease-in-out;
+		background-color: var(--title-color);
+	}
+
+	.navbar__toggle.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.navbar__toggle.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.navbar__toggle.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav__list {
+		position: fixed;
+		width: 0%;
+		height: 100%;
+		flex-direction: column;
+		text-align: center;
+		background: var(--body-color);
+		top: 0;
+		right: -100%;
+		padding: 10rem 1rem;
+		transition: all 750ms ease;
+		opacity: 0;
+	}
+
+	.nav__list li {
+		margin-bottom: 40px;
+	}
+
+	.nav__list.active {
+		right: 0;
+		width: 50%;
+		height: 100%;
+		opacity: 1;
+	}
 }
 
 .nav__link {
@@ -763,11 +803,6 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
-	.nav__close,
-	.nav__toggle {
-		display: none;
-	}
-
 	.nav__list {
 		flex-direction: row;
 		column-gap: 4rem;
