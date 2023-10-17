@@ -16,7 +16,7 @@ const DeletePost = () => {
 	useEffect(() => {
 		const fetchPost = async () => {
 			try {
-				const response = await axios.get(`http://localhost:3000/posts/${id}`);
+				const response = await axios.get(`http://localhost:5000/posts/${id}`);
 				setPost(response.data);
 			} catch (error) {
 				console.error('Erro ao buscar detalhes do post:', error);
@@ -28,7 +28,7 @@ const DeletePost = () => {
 
 	const handleDelete = async () => {
 		try {
-			await axios.delete(`http://localhost:3000/posts/${id}`);
+			await axios.delete(`http://localhost:5000/posts/${id}`);
 
 			dispatch({ type: 'DELETE_POST', payload: id });
 

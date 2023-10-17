@@ -14,7 +14,7 @@ const CreatePost = () => {
 	const handleSubmit = async e => {
 		e.preventDefault();
 		try {
-			const response = await axios.post('http://localhost:3000/posts', { title, body });
+			const response = await axios.post('http://localhost:5000/posts', { title, body });
 
 			const data = response.data;
 			console.log(data);

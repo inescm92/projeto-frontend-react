@@ -30,15 +30,15 @@ function App() {
 					<Home />
 					<About />
 					<Popular />
+					<Blog />
+					<Routes>
+						<Route path='/create' element={<CreatePost />} />
+						<Route path='/update/:id' element={<UpdatePost />} />
+						<Route path='/delete/:id' element={<DeletePost />} />
+						<Route path='*' element={<Navigate to='/' />} />
+					</Routes>
 					<Explore />
 				</main>
-				<Blog />
-				<Routes>
-					<Route path='/create' element={<CreatePost />} />
-					<Route path='/update/:id' element={<UpdatePost />} />
-					<Route path='/delete/:id' element={<DeletePost />} />
-					<Route path='*' element={<Navigate to='/' />} />
-				</Routes>
 				<Join />
 				<Footer />
 			</div>

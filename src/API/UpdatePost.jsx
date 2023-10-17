@@ -17,7 +17,7 @@ const UpdatePost = () => {
 	useEffect(() => {
 		const fetchPost = async () => {
 			try {
-				const response = await axios.get(`http://localhost:3000/posts/${id}`);
+				const response = await axios.get(`http://localhost:5000/posts/${id}`);
 				const post = response.data;
 
 				setTitle(post.title);
@@ -34,7 +34,7 @@ const UpdatePost = () => {
 		e.preventDefault();
 
 		try {
-			const response = await axios.put(`http://localhost:3000/posts/${id}`, {
+			const response = await axios.put(`http://localhost:5000/posts/${id}`, {
 				title,
 				body,
 			});

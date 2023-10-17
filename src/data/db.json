@@ -1,64 +1,64 @@
 {
 	"posts": [
 		{
+			"id": 1,
+			"title": "Hike the Andes to reach Incan ruins of Machu Picchu, Peru",
+			"body": "The Inca archaeological ruin of Machu Picchu is one of the Seven Wonders of the world. The trail is 4-day long taking you through some of country’s most beautiful landscapes."
+		},
+		{
 			"id": 2,
-			"title": "Componentes em React",
-			"body": "Os componentes são o coração do React. Aprenda como criar componentes reutilizáveis e eficientes."
+			"title": "Ride hot-air balloon in Cappadocia, Turkey",
+			"body": "The hot air balloon ride in Cappadocia is among major tourist attractions of Turkey. The ride takes you above a volcanic landscape and pleases you with golden sunset."
 		},
 		{
 			"id": 3,
-			"title": "Estado e Ciclo de Vida",
-			"body": "Entenda o estado do componente e o ciclo de vida para construir aplicações reativas."
+			"title": "Release the lanterns in Yi Peng Festival, Thailand",
+			"body": "Yi Peng Festival or the Lantern Festival is an important time of the year. Locals return to their home to celebrate this day with their families. They decorate houses and streets, and release sky lanterns, which is symbolic of letting go all the misfortunes."
 		},
 		{
 			"id": 4,
-			"title": "Hooks no React",
-			"body": "Os Hooks proporcionam uma nova forma de usar estado e outras características do React sem escrever classes."
+			"title": "Enjoy a hot spring bath in Blue Lagoon, Iceland",
+			"body": "The geothermal spa, Blue Lagoon, is located in a lava field. With steam released from its blue waters, it looks nothing less than a dream paradise."
 		},
 		{
 			"id": 5,
-			"title": "React e Redux",
-			"body": "Integre o Redux ao seu aplicativo React para gerenciar o estado global de maneira eficiente."
+			"title": "Behold the Northern Lights from Glass Igloo in Finland",
+			"body": "Northern Lights obviously is found in many people’s bucket list, but watching Aurora Borealis right from the comfort of your bed, in a luxurious glass igloo is an experience to cherish!"
 		},
 		{
 			"id": 6,
-			"title": "Roteamento com React Router",
-			"body": "Adicione roteamento à sua aplicação React para criar single-page applications (SPA) com eficiência."
+			"title": "Spend nights with the penguins in Antarctica’s Emperor Camp",
+			"body": "Who doesn’t want to visit Antarctica?! The cherry of the top is added when you’re spending nights in the camps amidst several friendly emperor penguins."
 		},
 		{
 			"id": 7,
-			"title": "Testando Componentes React",
-			"body": "Aprenda a escrever testes robustos para seus componentes e garantir que sua aplicação funcione como esperado."
+			"title": "Go glamping and wildlife viewing in Masai Mara, Kenya",
+			"body": "Kenya is considered the pilgrim for wildlife lovers. Right from game viewing to luxurious glamping experiences, you have everything sorted if you are a wild child!"
 		},
 		{
 			"id": 8,
-			"title": "Performance em React",
-			"body": "Dicas e truques para otimizar a performance do seu aplicativo React e proporcionar uma experiência suave para os usuários."
+			"title": "Scale the highest peak in the world – Mount Everest, Nepal",
+			"body": "You must have hiked all your life, but have you thought of reaching the peak of world’s tallest peak? Well if you haven’t, consider it the milestone! But make sure you have sufficient experience and are guided by an expert on your expedition."
 		},
 		{
 			"id": 9,
-			"title": "Props e Estados",
-			"body": "Nona entrada da nossa lista de posts de exemplo."
+			"title": "Celebrate La Tomatina in Spain",
+			"body": "After ZNMD, our travel goals have found a true meaning. People smash tomatoes around like crazy and then head to the bars for an after party. This festival takes place on the last wednesday of August in Valencian town of Buñol."
 		},
 		{
 			"id": 10,
-			"title": "Custom Hooks",
-			"body": "Metade do caminho, este é o post número 10!"
+			"title": "Walk the Great Wall of China",
+			"body": "The Great Wall of China is in fact one of world’s most talked-about tourist attraction. And to walk through the Wall isn’t suggested because of its hype. There are different regions, most of which aren’t even known to tourists, which you can explore and where you can indulge in various amazing adventure."
 		},
 		{
 			"id": 11,
-			"title": "Context API",
-			"body": "O post número 11 traz novos insights e detalhes."
+			"title": "Walk on the salt flats of Salar de Uyuni, Bolivia",
+			"body": "Often mistaken to be an optical illusion, the salt flats of Salar de Uyuni is world’s largest salt flat that’s spread across an area of 10,582 square kilometers."
 		},
 		{
-			"title": "Server-side rendering com React",
-			"body": "Descubra os benefícios do server-side rendering com React e como ele pode melhorar a performance e SEO do seu aplicativo.",
-			"id": 12
-		},
-		{
-			"title": "Fundamentos de react",
-			"body": "Aprenda os fundamentos do React, uma das bibliotecas JavaScript mais populares para construção de interfaces.",
-			"id": 13
+			"id": 12,
+			"title": "Glance at the Pyramids of Giza, Egypt",
+			"body": "The Egyptian pyramids have the power to move you with its secrets and history. There is so much to learn about the history, each of the aspect is intriguing in every sense."
 		}
 	]
 }

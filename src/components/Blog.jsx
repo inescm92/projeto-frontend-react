@@ -1,11 +1,73 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-function Blog() {
+import Pagination from '../components/Pagination';
+
+const Blog = () => {
+	const [posts, setPosts] = useState([]);
+	const [error, setError] = useState(null);
+
+	const [currentPage, setCurrentPage] = useState(1);
+	const [postsPerPage] = useState(4);
+
+	const paginate = pageNumber => setCurrentPage(pageNumber);
+
+	useEffect(() => {
+		const fetchPosts = async () => {
+			try {
+				const response = await fetch('http://localhost:5000/posts');
+
+				if (!response.ok) {
+					throw new Error('Network response foi nos piriquitos :(');
+				}
+
+				const data = await response.json();
+				const sortedData = data.sort((a, b) => b.id - a.id); // Ordena os posts por ID de maneira decrescente
+				setPosts(sortedData);
+			} catch (error) {
+				setError(error);
+			}
+		};
+
+		fetchPosts();
+	}, []);
+
+	const currentPosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
+
 	return (
-		<section className='blog section' id='popular'>
-			<h2 className='blog__title'>Blog</h2>
+		<section id='blog' className='blog'>
+			<div className='container'>
+				<div className='blog__wrapper'>
+					<div className='blog__title'>
+						<h2>
+							In Search of Inspiration? Check Out Our <Link to={`/create`}>Posts</Link>
+						</h2>
+					</div>
+
+					<div className='blog__posts'>
+						{error && <h4>{error.message}</h4>}
+
+						{currentPosts.map(post => (
+							<article className='blog__post' key={post.id}>
+								<h3>
+									{post.id} - {post.title}
+								</h3>
+								<p>{post.body}</p>
+								<Link to={`/update/${post.id}`} className='button update'>
+									Update
+								</Link>
+								<Link to={`/delete/${post.id}`} className='button delete'>
+									Delete
+								</Link>
+							</article>
+						))}
+					</div>
+
+					<Pagination totalPosts={posts.length} postsPerPage={postsPerPage} currentPage={currentPage} paginate={paginate} />
+				</div>
+			</div>
 		</section>
 	);
-}
+};
 
 export default Blog;

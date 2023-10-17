@@ -14,7 +14,7 @@ const PostForm = ({ action, id, title, body, onTitleChange, onBodyChange, onSubm
 		}
 
 		// Lógica para CREATE e UPDATE
-		let url = 'http://localhost:3000/posts';
+		let url = 'http://localhost:5000/posts';
 
 		// Se estiver atualizando, adicionamos o ID à URL
 		if (action === 'update') {
