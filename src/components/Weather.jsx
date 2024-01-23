@@ -6,7 +6,7 @@ import { faLocationDot, faDroplet, faWind } from '@fortawesome/free-solid-svg-ic
 function Weather() {
 	const [weatherData, setWeatherData] = useState({});
 	const [loading, setLoading] = useState(true);
-	const apiKey = '3b28750bf25ed10854a74443e3c64d88';
+	const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
 	useEffect(() => {
 		axios
@@ -19,7 +19,7 @@ function Weather() {
 				console.error('Error fetching weather data: ', error);
 				setLoading(false);
 			});
-	}, []);
+	}, [apiKey]);
 
 	if (loading) {
 		return <div>Loading...</div>;
